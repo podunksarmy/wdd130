@@ -1,9 +1,8 @@
-body {
-    text-align: center;
-}
-nav {
+nav, footer {
     background-color: steelblue;
+    color: white;
     padding: 10px;
+    text-align: center;
 }
 #active {
     background-color: white;
@@ -12,22 +11,31 @@ nav {
 a {
     color: white;
     margin: 40px;
+    font-size: 1.5em;
 }
+a:hover {
+        background-color: white;
+        color: steelblue;
+    }
 h1 {
     color: steelblue;
+    text-align: center;
 }
 img {
-    width: 800px;
-    border: 4px solid☺ steelblue;
+    width: 80%;
+    display: block;
+    margin: 0% auto;
 }
 p {
+    width:    80%;
     padding: 10px;
-}
+    margin: 50px auto;
+    }
 .main-para {
     font-size: 1.5em;
     line-height: 1.5em;
 }
-footer {
-    background-color: steelblue;
-    color: white;
+footer p {
+    font-size: 20px;
+    margin: 20px auto;
 }
