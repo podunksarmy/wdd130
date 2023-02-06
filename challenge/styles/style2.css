@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    background-color: grey;
+}
+
+#bannerimg {
+    width: 100%;
+    max-width: 1600px;
+}
+.iconimg {
+    border-radius: 50%;
+    border: 10px solid rgb(88, 88, 88);
+    width: 20%;    
+    margin: 30px 5%;
+
+}
+section {
+    display: inline;
+    margin: auto;
+    align-items: center;
+}
