@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Sofia+Sans&display=swap');
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -19,9 +20,6 @@ nav a {
 main section {
     text-align: center;
 }
-main section img {
-    box-sizing: border-box;
-}
 #background {
     height: 725px;
 }
@@ -42,7 +40,6 @@ nav a:hover {
     color: beige;
     font-family: "Indie Flower", Arial, Helvetica, sans-serif;
     font-size: 2em;
-    margin-top: 10px;
 }
 .heading {
     font-family: "Indie Flower", Arial, Helvetica, sans-serif;
@@ -63,16 +60,12 @@ h2 {
     text-decoration: none;
     font-size: 18px;
     font-family: "Sofia Sans", Arial, Helvetica, sans-serif;
-    padding: 15px 30px;
-    margin-top: 50px;
-    border-radius: 5px;
 }
 .book:hover, .join:hover {
     color: beige;
 }
 .msg {
     line-height: 1.5em;
-    padding: 35px;
 }
 .msg h2 {
     color: beige;
@@ -80,12 +73,9 @@ h2 {
 .msg p {
     color: beige;
     font-size: .8em;
-    padding-bottom: 15px;
 }
 footer {
     color: beige;
-    padding: 25px 50px;
-    margin-top: 200px;
 }
 footer a {
     color: beige;
@@ -98,15 +88,11 @@ footer a:hover {
 footer p {
     font-size: 1.2em;
 }
-footer .social img {
-    padding-top: 15px;
-}
 .logo {
     width: 80px;
 }
 .icon {
     width: 80px;
-    padding-top: 10px;
 }
 #hero-img {
     width: 100%;
@@ -114,13 +100,3 @@ footer .social img {
 p {
     font: "Sofia Sans";
 }
-#logo_link {
-    padding-top: 5px;
-}
-.camping-card, .rivers-card, .rapids-card {
-    margin: 200px 0;
-}
-.card-img {
-    border: 10px solid beige;
-}
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Sofia+Sans&display=swap');
