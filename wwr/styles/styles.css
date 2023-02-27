@@ -62,13 +62,15 @@ header {
     align-self: center;
 }
 nav a {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: #90D7FF;
+        color: #90D7FF;
     text-decoration: none;
     font-family: "Sofia Sans", Arial, Helvetica, sans-serif;
     padding: 35px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 nav a:hover {
     background-color: #F8FCDA;
