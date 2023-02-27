@@ -62,7 +62,7 @@ header {
     align-self: center;
 }
 nav a {
-    display: inline-flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     color: #90D7FF;
@@ -194,12 +194,6 @@ p {
         display: block;
         height: auto;
     }
-    nav, footer {
-        flex-direction: column;
-    }
-    nav a {
-        display: block;
-        padding: 15px;
     }
     #hero {
         margin-top: 0;
