@@ -191,6 +191,10 @@ p {
     opacity: .6;
     transform: scale(1.1);
 }
+#blog-banner {
+    width: 100%;
+    margin-inline-start: 20% auto;
+}
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
