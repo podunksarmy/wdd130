@@ -217,6 +217,9 @@ p {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
+h2 {
+    font-size: 1.75em;
+}
 #book-now {
     grid-column: 1/3;
     grid-row: 1/2;
@@ -225,12 +228,13 @@ p {
 #book-now-p {
     grid-column: 1/3;
     grid-row: 2/3;
-    text-align: left;
+    text-align: justify;
+    margin: auto 20px;
 }
 #book-now-img {
     grid-column: 3/5;
-    margin: 30px auto;
     grid-row: 1/3;
+    margin: auto 30px;
 }
 #blog-join {
     grid-column: 3/5;
@@ -238,7 +242,44 @@ p {
     margin-top: 20%;
     text-decoration: none;
     color: #396E94;
-   }
+}
+#highlights {
+    grid-column: 3/5;
+}
+#highlights-p {
+    grid-column: 3/5;
+    text-align: justify;
+    margin: auto 20px;
+}
+#highlights-img {
+    grid-column: 1/3;
+    grid-row: 3/5;
+    margin: 30px auto;
+}
+#encounters {
+    grid-column: 2/4;
+}
+#encounters-p {
+    grid-column: 1/5;
+}
+#encounters-scorpions {
+    grid-column: 1/5;
+}
+#scorpion {
+    float: right;
+    margin:  0 30px;
+    border: 5px solid #443627;
+}
+#encounters-bighorn {
+    grid-column: 1/5;
+}
+#bighorn {
+    float: left;
+    margin: 0 30px;
+    border: 5px solid #443627
+}
+
+
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
