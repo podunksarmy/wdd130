@@ -33,7 +33,7 @@ header {
    a {
     text-decoration: none;
    }
-   a:hover {color: #331832;
+   nav a:hover, footer a:hover {color: #331832;
     background-color: #f1ecceff;
     border: 5px solid black;
    }
@@ -90,6 +90,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 #contact_hover_box:hover {
     transform: scale(1.5);
+}
+
+
+
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);background-color: #46180fff;
+}
+footer p {
+    padding-top: 40px;
+    margin-left: 30px;
+}
+footer a {
+    color: #f1ecceff;
+    padding: 50% 0;
+}
+.social {
+    padding: 50% 0;  
+}
+.social a:hover {
+    background-color: #46180fff;
+    border: none !important;
 }
 
 
