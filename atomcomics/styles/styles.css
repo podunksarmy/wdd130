@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Indie+Flower&family=Permanent+Marker&family=Rokkitt:wght@500&family=Yanone+Kaffeesatz&display=swap');
 
+/* Header CSS */
 header {
     padding: 1em;
     text-align: center;
@@ -15,9 +16,8 @@ header {
     width: 200px;
    }
    nav {
-    display: flex;
-    justify-content: space-around;
-    
+        display: flex;
+        justify-content: space-around;
    }
    nav a {
     color: #f1ecceff;
@@ -25,6 +25,33 @@ header {
     margin: 30px;
     padding-top:3%;
    }
+   .dropdown {
+    margin: 30px;
+    margin-left: 40px;
+    padding-top: 3%;
+   }
+   .dropdown_content {
+        display: none;
+        position: absolute;
+        background-color: #f1ecceff;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown_content a {
+        color: #331832;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown_content a:hover {
+        background-color: #ddd;
+    }
+    .dropdown:hover .dropdown_content {
+        display: block;
+    }
+
+    /* Body/general CSS */
    .text_link {
     color: #f1ecceff;
     font-weight: bold;
@@ -37,14 +64,7 @@ header {
     background-color: #f1ecceff;
     border: 5px solid black;
    }
-   .dropdown {
-    margin: 30px;
-    padding-top: 3%;
-   }
-   .dropdown_content {
-        display: none;
-    }
- body { 
+   body { 
     max-width: 1600px;
     margin: 0 auto;
     padding: 4em;
@@ -58,6 +78,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #f1ecceff;
     background-color: #46180fff;    
 }
+
+/* Footer CSS */
 footer {
     display: grid;
     grid-template-columns: repeat(8, 1fr);background-color: #46180fff;
