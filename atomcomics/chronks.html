@@ -28,25 +28,91 @@
     </header>
     <main>
         <section id="chronks_banner">
-            <h1>Chronicles of Heroes</h1>
-            <h2>An Ancient World, built on the ruins of a lost civilization</h2>
-            <h3>Gods, old and new, bicker for power as humanity suffers</h3>
-            <h4>One man rises up in a bid to defy the divine an doverthrow these "petty pretenders"</h4>
-            <h5>This is not his story..</h5>
+            <h1 class="chronks_intro">Chronicles of Heroes</h1>
+            <h2 class="chronks_intro">An Ancient World, built on the ruins of a lost civilization</h2>
+            <h3 class="chronks_intro">Gods, old and new, bicker for power as humanity suffers</h3>
+            <h4 class="chronks_intro">One man rises up in a bid to defy the divine an doverthrow these "petty pretenders"</h4>
+            <h5 class="chronks_intro">This is not his story..</h5>
         </section>
-        <article>
-                <p>
+        <article id="intro_to_kade">
+                <p id="kade_p">
                     Kade Wilson is no common skeezball.  He is an exceptional skeezball.  After stealing from an old gypsy woman, he kills her to escape her service and is instead cursed to carry her bones and spirit with him until the end of his days.  His singular mission is now to find a way to break the curse before Babs drives him insane.  He encounters Lana, a princess desperate to escape her silk prison and see the world.  Together they blunder through a world on the brink of war and annihilation.  Through it all, Kade never loses sight of is priorities--himself, and Lana when he can be bothered.
                 </p>
-                <img src="#" alt="Kade Wilson">
+                <img id="kade_pic" src="images/kade_smol.jpg" alt="Kade Wilson">
             </article>
-            <section>
-                <h2>Check out some of our pages!</h2>
-                <img src="images/chronks_jane_borading_fullcolor.jpg">
-                <img src="images/chronks_jane_fullcolor.jpg">
-                <img src="images/chronks_xandroth_greeted_by_crowd_fullcolor.png">
-                <h3 href="#">Download the first six pages now!</h3>
-            </section>
+
+            <!--Container for the Image Gallery-->
+            <div class="container">
+                <h2>Download the First Six Pages!</h2>
+
+                <!--Full-width Images w/Number Text-->
+                <div class="myslides">
+                    <div class="numberedtext">1/6</div>
+                        <img class="slides" src="images/chronks_page1.png" style="width:100%">
+                </div>
+                <div class="myslides">
+                    <div class="numberedtext">2/6</div>
+                        <img class="slides" src="images/chronks_page2.png" style="width:100%">
+                </div>
+                <div class="myslides">
+                    <div class="numberedtext">3/6</div>
+                        <img class="slides" src="images/chronks_page3.png" style="width:100%">
+                </div>
+                <div class="myslides">
+                    <div class="numberedtext">4/6</div>
+                        <img class="slides" src="images/chronks_page4.png" style="width:100%">
+                    </div>
+                </div>
+                <div class="myslides">
+                    <div class="numberedtext">5/6</div>
+                        <img class="slides" src="images/dreamer_xandroth_exploring_tentacles_bw.jpg" style="width:100%">
+                    </div>
+                </div>
+                <div class="myslides">
+                    <div class="numberedtext">6/6</div>
+                        <img class="slides" src="images/dreamer_xandroth_exploring_tentacles_bw.jpg" style="width:100%">
+                    </div>
+                </div>
+
+                <!--Next and Previous Buttons-->
+                <a class="prev" onclick="
+                plusslides(-1)">&#10094</a>
+                <a class="next" onclick="plusslides
+                (1)">&#10095</a>
+
+                <!--Image Text-->
+                <div class="caption_container">
+                    <p id="caption"></p>                    
+                </div>
+
+                <!--Thumbnail Images-->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo_cursor" src="images/chronks_page1_thumb.png" style="width
+                        100%" onclick="currentslide(1)" alt="Page 1">
+                    <div class="column">
+                        <img class="demo_cursor" src="images/chronks_page2_thumb.png" style="width
+                        100%" onclick="currentslide(2)" alt="Page 1">
+                    </div>
+                    <div class="column">
+                        <img class="demo_cursor" src="images/chronks_page3_thumb.png" style="width
+                        100%" onclick="currentslide(3)" alt="Page 1">
+                    </div>
+                    <div class="column">
+                        <img class="demo_cursor" src="images/chronks_page4_thumb.png" style="width
+                        100%" onclick="currentslide(4)" alt="Page 1">
+                    </div>
+                    <div class="column">
+                        <img class="demo_cursor" src="images/dreamer_xandroth_exploring_tentacles_bw_thumb.jpg" style="width
+                        100%" onclick="currentslide(5)" alt="Page 1">
+                    </div>
+                    <div class="column">
+                        <img class="demo_cursor" src="images/dreamer_xandroth_exploring_tentacles_bw_thumb.jpg" style="width
+                        100%" onclick="currentslide(6)" alt="Page 1">
+                    </div>
+                    </div>
+                </div>
+            </div>
     </main>
     <footer>
         <p>Iron Atom Studios &copy; 2023 - The Heidt Brothers</p> 

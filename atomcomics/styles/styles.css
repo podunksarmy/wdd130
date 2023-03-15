@@ -9,6 +9,7 @@ header {
     font-family: "Permanent Marker";
     display: grid;
     grid-template-columns: 300px auto;
+    margin-top: -102px;
    }
    #atom_logo {
     border-radius: 90%;
@@ -57,6 +58,10 @@ header {
     font-weight: bold;
     font-style: italic;
    }
+   .text_link:hover {
+    color: #331832;
+    font-size: 1.1em;   
+}
    a {
     text-decoration: none;
    }
@@ -76,7 +81,6 @@ header {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Permanent Marker";
     color: #f1ecceff;
-    background-color: #46180fff;    
 }
 
 /* Footer CSS */
@@ -142,8 +146,35 @@ footer a {
 #contact_hover_box:hover {
     transform: scale(1.5);
 }
+#chronks_img {
+    border: 5px solid #46180fff;
+}
+#hastur_img {
+    border: 5px solid #46180fff;
+}
+#envelope_img {
+    border: 5px solid #46180fff;
+}
 
 /* Chronks CSS */
+
+#chronks_banner {
+    background-color: #46180fff;
+    border-radius: 45%;
+}
+#intro_to_kade {
+    display: grid;
+    grid-template-columns: 1fr, 2fr;
+}
+#kade_p {
+    grid-column: 2/3;
+    padding: 20px;
+}
+#kade_pic {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: 5px solid #46180fff;
+}
 
 
 
