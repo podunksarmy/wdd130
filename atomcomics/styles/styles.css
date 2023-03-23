@@ -186,12 +186,18 @@ footer a {
 }
 #kade_p {
     grid-column: 2/3;
+    grid-row: 1/2;
     padding: 20px;
+    margin-top: 100px;
 }
 #kade_pic {
     grid-column: 1/2;
     grid-row: 1/2;
     border: 5px solid #46180fff;
+}
+#kade_title {
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
 
 
