@@ -7,6 +7,102 @@
     <link rel="stylesheet" href="styles/styles.css">
     <title>Iron Atom Studios</title>
 </head>
+<style>
+body {
+  font-family: Arial;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer; 
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
 <body id="chronks_page">
     <header>
         <a id="logo_link" href="index.html">
@@ -31,7 +127,7 @@
             <h1 class="chronks_intro">Chronicles of Heroes</h1>
             <h2 class="chronks_intro">An Ancient World, built on the ruins of a lost civilization</h2>
             <h3 class="chronks_intro">Gods, old and new, bicker for power as humanity suffers</h3>
-            <h4 class="chronks_intro">One man rises up in a bid to defy the divine an doverthrow these "petty pretenders"</h4>
+            <h4 class="chronks_intro">One man rises up in a bid to defy the divine and overthrow these "petty pretenders"</h4>
             <h5 class="chronks_intro">This is not his story..</h5>
         </section>
         <article id="intro_to_kade">
@@ -46,30 +142,30 @@
                 <h2>Download the First Six Pages!</h2>
 
                 <!--Full-width Images w/Number Text-->
-                <div class="myslides">
-                    <div class="numberedtext">1/6</div>
+                <div class="mySlides">
+                    <div class="numbertext">1/6</div>
                         <img class="slides" src="images/chronks_page1.png" style="width:100%">
                 </div>
-                <div class="myslides">
-                    <div class="numberedtext">2/6</div>
+                <div class="mySlides">
+                    <div class="numbertext">2/6</div>
                         <img class="slides" src="images/chronks_page2.png" style="width:100%">
                 </div>
-                <div class="myslides">
-                    <div class="numberedtext">3/6</div>
+                <div class="mySlides">
+                    <div class="numbertext">3/6</div>
                         <img class="slides" src="images/chronks_page3.png" style="width:100%">
                 </div>
-                <div class="myslides">
-                    <div class="numberedtext">4/6</div>
+                <div class="mySlides">
+                    <div class="numbertext">4/6</div>
                         <img class="slides" src="images/chronks_page4.png" style="width:100%">
                     </div>
                 </div>
-                <div class="myslides">
-                    <div class="numberedtext">5/6</div>
+                <div class="mySlides">
+                    <div class="numbertext">5/6</div>
                         <img class="slides" src="images/dreamer_xandroth_exploring_tentacles_bw.jpg" style="width:100%">
                     </div>
                 </div>
-                <div class="myslides">
-                    <div class="numberedtext">6/6</div>
+                <div class="mySlides">
+                    <div class="numbertext">6/6</div>
                         <img class="slides" src="images/dreamer_xandroth_exploring_tentacles_bw.jpg" style="width:100%">
                     </div>
                 </div>
@@ -81,39 +177,69 @@
                 (1)">&#10095</a>
 
                 <!--Image Text-->
-                <div class="caption_container">
+                <div class="caption-container">
                     <p id="caption"></p>                    
                 </div>
 
                 <!--Thumbnail Images-->
                 <div class="row">
                     <div class="column">
-                        <img class="demo_cursor" src="images/chronks_page1_thumb.png" style="width
+                        <img class="demo cursor" src="images/chronks_page1_thumb.png" style="width
                         100%" onclick="currentslide(1)" alt="Page 1">
+                    </div>
                     <div class="column">
-                        <img class="demo_cursor" src="images/chronks_page2_thumb.png" style="width
+                        <img class="demo cursor" src="images/chronks_page2_thumb.png" style="width
                         100%" onclick="currentslide(2)" alt="Page 1">
                     </div>
                     <div class="column">
-                        <img class="demo_cursor" src="images/chronks_page3_thumb.png" style="width
+                        <img class="demo cursor" src="images/chronks_page3_thumb.png" style="width
                         100%" onclick="currentslide(3)" alt="Page 1">
                     </div>
                     <div class="column">
-                        <img class="demo_cursor" src="images/chronks_page4_thumb.png" style="width
+                        <img class="demo cursor" src="images/chronks_page4_thumb.png" style="width
                         100%" onclick="currentslide(4)" alt="Page 1">
                     </div>
                     <div class="column">
-                        <img class="demo_cursor" src="images/dreamer_xandroth_exploring_tentacles_bw_thumb.jpg" style="width
+                        <img class="demo cursor" src="images/dreamer_xandroth_exploring_tentacles_bw_thumb.jpg" style="width
                         100%" onclick="currentslide(5)" alt="Page 1">
                     </div>
                     <div class="column">
-                        <img class="demo_cursor" src="images/dreamer_xandroth_exploring_tentacles_bw_thumb.jpg" style="width
+                        <img class="demo cursor" src="images/dreamer_xandroth_exploring_tentacles_bw_thumb.jpg" style="width
                         100%" onclick="currentslide(6)" alt="Page 1">
-                    </div>
                     </div>
                 </div>
             </div>
     </main>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("demo");
+          let captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
     <footer>
         <p>Iron Atom Studios &copy; 2023 - The Heidt Brothers</p> 
         <a href="index.html">Home</a>
