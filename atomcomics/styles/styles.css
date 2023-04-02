@@ -203,11 +203,42 @@ footer a {
 
 
 
-
-
-
-
-
+/* Hastur CSS */
+#article_hastur {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+#lovecraft_images {
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+}
+.love_pic {
+    max-height: 500px;
+}
+#astrophobos {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#astrophobos_text {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#cthulu {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#cthulu_text {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#ancient_track {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+#ancient_track_text {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
 
 
 
